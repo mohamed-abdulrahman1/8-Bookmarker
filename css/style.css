@@ -1,0 +1,21 @@
+*{
+	font-family:arial
+}
+.form-project
+{
+    background-color: #EEE;
+   
+}
+
+.table
+{
+    background-color: #EEE;
+}
+.link-color
+{
+    color: #fff;
+}
+.link-color:hover{
+    color: #fff;
+    text-decoration: none;
+}

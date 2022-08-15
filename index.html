@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="container pt-4 ">
+
+        <h2 class="text-muted pb-4 font-weight-bold">Bookmarker</h2>
+        <hr>
+
+        <div class="form-project text-center my-5 p-5">
+
+
+            <h3 class="font-weight-bold my-2">Bookmark your favorite</h3>
+
+
+            <div class="form-group mx-4">
+                <h6 class="text-center font-weight-bold my-2">site name</h6>
+                <input id="bookmakerName" class="form-control" placeholder="Book mark name" name="productName"
+                    type="text" />
+                <p class="alert-danger my-3 " id="nameAlert"></p>
+            </div>
+
+            <div class="form-group mx-4">
+                <h6 class="text-center font-weight-bold my-3">site url</h6>
+                <input id="websiteurl" class="form-control" name="mydesc" placeholder="Website Url" type="text" />
+                <p class="alert-danger my-2" id="urlAlert"></p>
+            </div>
+            <p class="text-danger my-2 mx-4  font-weight-bold d-none" id="inputsAlert">All inputs are required</p>
+            <p class="text-danger my-2 mx-4  font-weight-bold d-none" id="inputsAlert2">name is exist</p>
+            <button class="btn btn-primary" disabled id="addBtn">Submit</button>
+
+        </div>
+
+
+        <input onkeyup="search(this.value)" class="py-3  form-control" placeholder="search by bookmark name"></input>
+
+
+        <table class="table my-4 py-5">
+            <thead>
+
+            </thead>
+            <tbody id="tableBody">
+
+
+            </tbody>
+
+        </table>
+        <hr>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="text-muted font-weight-bold">&copy; 2021 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
